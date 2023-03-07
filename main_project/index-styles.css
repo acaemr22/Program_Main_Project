@@ -226,11 +226,11 @@ svg {
 
 
 .answer {
-  /* max-height: 0;
-  overflow: hidden; */
+  max-height: 0;
+  overflow: hidden;
   position: relative;
   background-color: #212838;
-
+  transition: max-height 650ms;
 }
 
 .answer::before {
@@ -248,4 +248,20 @@ svg {
   color: rgba(255, 255, 255, .6);
   font-size: 14px;
   padding: 2rem;
+}
+
+
+.accordion-item:target .answer {
+  max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link [name="add-outline"] {
+  display: none;
+}
+
+.accordion-item:target .accordion-link [name="remove-outline"] {
+  display: block;
+}
+.accordion-item .accordion-link [name="remove-outline"] {
+  display: none;
 }
