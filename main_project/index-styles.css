@@ -1,173 +1,174 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+  
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+
+#logo {
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+  }
+
+  
+header>h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+  
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
   }
   
-  
-  body {
-      background: #f5f6f7;
-      color: #1b1b32;
-      font-family: Helvetica;
-      margin: 0;
-  }
-    
-  header {
-      width: 100%;
-      height: 50px;
-      background-color: #1b1b32;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      top: 0;
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
   }
   
-  
-  #logo {
-      width: max(100px, 18vw);
-      background-color: #0a0a23;
-      aspect-ratio: 35 / 4;
-      padding: 0.4rem;
-    }
-  
-    
-  header>h1 {
-    color: #f1be32;
-    font-size: min(5vw, 1.2em);
-    text-align: center;
+  nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
   }
-    
-    nav {
-      width: 50%;
-      max-width: 300px;
-      height: 50px;
-    }
-    
-    nav > ul {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      align-items: center;
-      padding-inline-start: 0;
-      margin-block: 0;
-      height: 100%;
-    }
-    
-    nav > ul > li {
-      color: #dfdfe2;
-      margin: 0 0.2rem;
-      padding: 0.2rem;
-      display: block;
-    }
+
+
+
+  nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+  }
   
-  
-  
-    nav > ul > li:hover {
-      background-color: #dfdfe2;
-      color: #1b1b32;
-      cursor: pointer;
-    }
-    
-    li > a {
-      color: inherit;
-      text-decoration: none;
-    }
-  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
 
 
 /* Body */
 
 
 #cafe-img {
-    background-image: url(images/Ekran_görüntüsü.png);
-    background-size: 100% 70vh;
-    height: 70vh;
-    width: 100%;
+  background-image: url(images/Ekran_görüntüsü.png);
+  background-size: 100% 70vh;
+  height: 70vh;
+  width: 100%;
 }
 
 
 
 
 
-  
+
 .how-1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin: 10px auto;
-    padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 10px auto;
+  padding: 20px 10px;
 }
 
 .how-1, .how-2  {
-    margin-left: 5%
+  margin-left: 5%
 }
 
 h2 {
-    margin-left: 3%
+  margin-left: 3%
 }
 
 article {
-    width: 32%
+  width: 32%
 }
 
 
 svg {
-    width: 10vw;
-    margin-left: 22%;
+  width: 10vw;
+  margin-left: 22%;
 }
 
 .star {
-    margin-left: 11%
+  margin-left: 11%
 }
 
 
 .core-values {
-  display: flex;
-  flex-direction: row;
-  width: 90vw;
-  height: 100vh;
-  margin-left: 5vw;
-  flex-wrap: wrap;  
+display: flex;
+flex-direction: row;
+width: 90vw;
+height: auto;
+margin-left: 5vw;
+flex-wrap: wrap;  
+row-gap: 10px;
 }
 
 
-.core-values article{
-  min-width:  300px;
-  
+.core-values>article{
+min-width:  300px;
+height: 200px
 }
 
 @media (max-width: 800px) {
-  .core-values {
-    display: block;
-    width: 98vw;
-    height: 100vh;
-    margin-left: 1vw;
-  }
+.core-values {
+  display: block;
+  width: 98vw;
+  height: 100vh;
+  margin-left: 1vw;
+}
 
-  .core-values article  {
-    width: 100%;
-  }
+.core-values article  {
+  width: 100%;
+}
 
-  .how-1 {
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin:  20px 4vw;
-    padding:  20px 4vw;
-  }
+.how-1 {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin:  20px 4vw;
+  padding:  20px 4vw;
+}
 
-  svg {
-    min-width: 100px ;
-  }
+svg {
+  min-width: 100px ;
+}
 
-  .how-1 article {
-    width: 60%;
-    margin-left: 20%;
-    height: 100px
-  }
+.how-1 article {
+  width: 60%;
+  margin-left: 20%;
+  height: 100px
+}
 
-  .star {
-    margin-left: 22%
+.star {
+  margin-left: 22%
 }
 }
