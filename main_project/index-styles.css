@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -172,3 +172,6 @@ svg {
   margin-left: 22%
 }
 }
+
+
+section
