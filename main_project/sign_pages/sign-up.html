@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta name="description" content="Sign up to Goodwork">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles-up.css">
+        <title>Sign Up | Goodwork</title>
+        
+
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="https://mma.prnewswire.com/media/1990405/jobzmalllogoo_Logo.jpg?w=200">
+            <h1>Sign Up</h1>
+            <nav>
+              <ul id="nav-lar-ul">
+                <li><a href="../about-us.html">About Us</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+              </ul>
+
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+              <ul class="dropdown-context">
+                <li><a href="../about-us.html">About Us</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+              </ul>
+            </div>
+
+            </nav>
+          </header>
+          <div class="relative"><div class="background-images"></div></div>
+        <main class="background-div">
+            <form action="../about-us.html" class="background-color">
+            <div class="main-form relative-form">
+                <h1 class="form-h1">Join the Community</h1>
+                <p class="form-p">Already have an account? <a href="sign-in.html">Log in</a></p>
+            <div class="inline-part">
+                <fieldset class="inline" id="ad-fieldset">
+                    <label class="shrink" for="ad" id="ad-label">Ad *
+                    <input type="text" name="" id="ad" placeholder="Ör. Emre" required pattern="[^0-9]+"   class="inline-input" ></label>
+                </fieldset>
+                
+                <fieldset class="inline" id="soyad-fieldset">
+                    <label class="shrink"  id="soyad-label" for="soyad">Soyad *
+                    <input type="text" name="" id="soyad" placeholder="Ör. Açar" minlength="3" required pattern="[^0-9]+" class="inline-input"></label>
+                </fieldset>
+            </div>
+                <fieldset>
+                    <label for="tel">Phone Number *
+                    <input class="large" id="phone" type="tel" name="" id="tel"  minlength="3" placeholder="501 234 56 78"  pattern="[0-9]+.[0-9]+.[0-9]+.[0-9]+." required></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="email">Email *
+                    <input class="large" type="email" name="" id="email" placeholder="example@gmail.com"  required></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="password">Password *
+                    <input class="large" type="password" name="password" minlemgth="8"  id="password" required></label>
+                </fieldset>
+                <p class="form-p">By clicking Continue you accept the terms of our Terms of Service and Privacy Policy</p>
+                <input class="middle" type="submit" value="Submit">
+            </div>
+            
+            </form>
+        </main>
+    </body>
+</html>
