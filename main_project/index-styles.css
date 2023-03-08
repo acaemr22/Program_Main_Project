@@ -185,6 +185,10 @@ svg {
   display: none
 }
 
+.topnav {
+  display: block
+}
+
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
