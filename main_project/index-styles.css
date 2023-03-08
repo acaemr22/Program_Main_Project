@@ -219,7 +219,7 @@ svg {
 }
 
 /* Add a grey background color on mouse-over */
-.topnav a:hover:not() {
+.topnav a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -229,7 +229,6 @@ svg {
   color: white;
   background-color: #1b1b32;
   display: block;
-
 }
 
 
