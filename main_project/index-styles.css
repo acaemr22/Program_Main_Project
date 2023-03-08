@@ -189,7 +189,7 @@ svg {
   width: 100%;
   max-width: 80rem;
   margin: 0 auto; 
-  padding:  0 1.5rem;
+  padding:  0 1.5rem; 
 }
 
 
@@ -201,7 +201,8 @@ svg {
   box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
 }
 
-.accordion-link {
+
+.accordion-item-header {
   font-size: 1.6rem;
   color: rgba(255, 255, 255, .8);
   text-decoration: none;
@@ -214,18 +215,18 @@ svg {
 }
   
 
-.accordion-link i{
+.accordion-item-header i{
   color: #e7d5ff;
   padding: .5rem;
 }
 
 
-.accordian-link .ion-md-remove{
+.accordion-item-header .ion-md-remove{
   display: none;
 }
 
 
-.answer {
+.accordion-item-body {
   max-height: 0;
   overflow: hidden;
   position: relative;
@@ -233,7 +234,7 @@ svg {
   transition: max-height 650ms;
 }
 
-.answer::before {
+.accordion-item-body::before {
   content: "";
   position: absolute;
   width: .6rem;
@@ -244,24 +245,26 @@ svg {
   transform: translateY(-50%); 
 }
 
-.answer p{
+.accordion-item-body p{
   color: rgba(255, 255, 255, .6);
   font-size: 14px;
   padding: 2rem;
 }
 
-
-.accordion-item:target .answer {
+.accordion-item:target .accordion-item-body {
   max-height: 20rem;
 }
 
-.accordion-item:target .accordion-link [name="add-outline"] {
+.accordion-item:target .accordion-item-header [name="add-outline"] {
   display: none;
 }
 
-.accordion-item:target .accordion-link [name="remove-outline"] {
+.accordion-item:target .accordion-item-header [name="remove-outline"] {
   display: block;
 }
-.accordion-item .accordion-link [name="remove-outline"] {
+
+.accordion-item .accordion-item-header [name="remove-outline"] {
   display: none;
 }
+
+
