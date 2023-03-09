@@ -90,9 +90,29 @@ header>h1 {
   background-size: 100% 70vh;
   height: 70vh;
   width: 100%;
+  padding-top: 30vh
 }
 
+#cafe-img>h1 {
+  color: white;
+  text-align: center;
+  font-size: 55px;
+}
 
+#cafe-img>p {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #3880ff;
+  width: 800px ;
+  height: 1.3rem;
+  margin: 20px auto 0;
+  border-radius: 10px;
+
+}
+
+#cafe-img>p>span {
+  text-decoration:green wavy underline;
+}
 
 
 .how-q {
