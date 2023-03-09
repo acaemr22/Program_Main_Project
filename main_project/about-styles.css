@@ -124,3 +124,76 @@ iframe {
   text-align: justify;
   line-height: 1.5;
 }
+
+.topnav {
+  display: none
+}
+
+
+@media (max-width: 800px) {
+  
+  .long-nav {
+    display: none
+  }
+  
+  .topnav {
+    display: block;
+    height: 50px;
+  }
+  
+  /* Style the navigation menu */
+  .topnav {
+    overflow: visible;
+    background-color: var(--navbar-color);
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    margin-top: 50px;
+  }
+  
+  
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    background-color: black;
+  }
+  
+  .topnav a{
+    background-color: black;
+  }
+  
+  
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #contact {
+    width: 90vw
+  }
+
+  iframe {
+    margin-left: 8vw;
+    width: 84vw
+  }
+
+
+  nav {
+    width: 155px
+  }
+  
+}
+
