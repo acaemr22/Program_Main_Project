@@ -262,4 +262,37 @@ div>h1, div>p {
         width: 240px;
         min-width: 200px;
     }
+
+
 }
+
+
+
+
+@media (max-width: 360px){
+    label[for="password"], label[for="email"]{
+        padding: 0
+    }
+
+    input[class="large"] {
+        width: 200px;
+        min-width: 180px;
+    }
+
+
+    
+}
+
+
+@media (max-width: 400px){
+    nav {
+        width: 30%
+    }}
+    
+    
+    
+@media (max-width: 500px){
+        nav {
+            width: 40%
+        }}
+    
