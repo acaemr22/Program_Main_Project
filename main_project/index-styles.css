@@ -139,20 +139,17 @@ padding: 80px 30px;
 overflow: hidden;
 background-color: #452797;
 border-radius: 20px;
-margin: 50px
-}
+margin: 50px;
+justify-content: center;
 
-.core-values>.couplet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px
 }
 
 
 
 
-.core-values>.couplet>article, .core-values>article {
+
+
+.core-values>article {
   border-radius: 20px;
   border: solid;
   text-align: center;
@@ -165,6 +162,8 @@ margin: 50px
 .topnav {
   display: none;
 }
+
+
 
 @media (max-width: 800px) {
 .core-values {
