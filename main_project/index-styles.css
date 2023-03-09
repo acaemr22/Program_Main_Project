@@ -1,3 +1,8 @@
+:root {
+  --navbar-color: #1b1b32
+}
+
+
 *, *::before, *::after {
   box-sizing: border-box;
   padding: 0;
@@ -16,7 +21,7 @@ body {
 header {
     width: 100%;
     height: 50px;
-    background-color: #1b1b32;
+    background-color: var(--navbar-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,19 +134,22 @@ svg {
 
 
 .core-values {
-display: flex;
-flex-direction: row;
-width: auto;
-max-height: 900px;
-flex-wrap: wrap;  
-gap: 20px;
-padding: 80px 30px;
-overflow: hidden;
-background-color: #452797;
-border-radius: 20px;
-margin: 50px;
-justify-content: center;
-
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-height: 900px;
+  flex-wrap: wrap;  
+  gap: 20px;
+  padding: 80px 30px;
+  overflow: hidden;
+  background-color: #452797;
+  border-radius: 20px;
+  margin: 50px;
+  margin-top: 0;
+  justify-content: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -168,14 +176,13 @@ justify-content: center;
 @media (max-width: 800px) {
 .core-values {
   display: block;
-  margin: 0 4%;
+  margin: 40px 4%;
   width: 92%;
-  min-height: 100vh;
-  max-height: auto;
+  max-height: 120vh;
 }
 
-.core-values>article, .core-values>.couplet>article  {
-  width: 100%;
+.core-values>article  {
+  width: 100%;  
   margin-bottom: 15px
 }
 
@@ -209,20 +216,24 @@ svg {
 }
 
 .topnav {
-  display: block
+  display: block;
+  height: 50px
 }
 
 /* Style the navigation menu */
 .topnav {
-  overflow: hidden;
-  background-color: #333;
+  overflow: visible;
+  background-color: var(--navbar-color);
   position: relative;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+  margin-top: 50px;
 }
+
+
 
 /* Style navigation menu links */
 .topnav a {
@@ -231,7 +242,14 @@ svg {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  background-color: black;
 }
+
+.topnav a{
+  background-color: black;
+}
+
+
 
 /* Style the hamburger menu */
 .topnav a.icon {
@@ -242,6 +260,7 @@ svg {
   top: 0;
 }
 
+
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   background-color: #ddd;
@@ -249,10 +268,7 @@ svg {
 }
 
 /* Style the active link (or home/logo) */
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
+
 
 
 }
