@@ -5,6 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles-up.css">
+        <script src="main.js"></script>
         <title>Kayıt Ol | Goodwork</title>
         
 
@@ -14,22 +15,28 @@
             <img id="logo" src="https://mma.prnewswire.com/media/1990405/jobzmalllogoo_Logo.jpg?w=200">
             <h1>Kayıt Ol</h1>
             <nav>
-              <ul id="nav-lar-ul">
+              <ul id="nav-lar-ul" class="large-nav">
                 <li><a href="../about-us.html">Hakkımızda</a></li>
                 <li><a href="sign-up.html">Kayıt Ol</a></li>
                 <li><a href="sign-in.html">Oturum Aç</a></li>
               </ul>
 
-              <div class="dropdown">
-                <button class="dropbtn">Dropdown 
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-              <ul class="dropdown-context">
-                <li><a href="../about-us.html">Hakkımızda</a></li>
-                <li><a href="sign-up.html">Kayıt Ol</a></li>
-                <li><a href="sign-in.html">Oturum Aç</a></li>
-              </ul>
-            </div>
+
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+              <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="../about-us.html" class="first">Hakkımızda</a>
+                    <a href="sign-up.html">Kayıt Ol</a>
+                    <a href="sign-in.html">Oturum Aç</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
 
             </nav>
           </header>
