@@ -133,25 +133,32 @@ svg {
 }
 
 
+
+
+
+
 .core-values {
   display: flex;
   flex-direction: row;
-  width: auto;
-  min-height: 900px;
-  flex-wrap: wrap;  
-  gap: 20px;
-  padding: 80px 30px;
-  overflow: hidden;
-  background-color: #452797;
-  border-radius: 20px;
-  margin: 50px;
-  margin-top: 0;
   justify-content: center;
-  max-width: 1400px;
+  overflow: hidden;
+  gap: 20px;
+  border-radius: 20px;
+  flex-wrap: wrap;  
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1400px;
+  width: auto;
+  padding: 80px 30px;
+  margin-top: 0 !important
 }
 
+.core-values-section {
+  background-color: #452797;
+  margin-top: 40px;
+  padding-top: 40px;
+}
 
 
 
@@ -161,10 +168,10 @@ svg {
   border-radius: 20px;
   border: solid;
   text-align: center;
-  min-width:  300px;
+  min-width:  200px;
   min-height: 150px;
   padding: 20px;
-  margin: 0 2px;
+  margin: 20px 20px;
 }
 
 .topnav {
@@ -173,12 +180,13 @@ svg {
 
 
 
+
 @media (max-width: 800px) {
 .core-values {
   display: block;
   margin: 40px 4%;
-  width: 92%;
-  max-height: 120vh;
+  width:auto;
+  max-height: auto;
 }
 
 .core-values>article  {
@@ -186,9 +194,6 @@ svg {
   margin-bottom: 15px
 }
 
-.core-values>.couplet {
-  display: block;
-}
 
 
 .how-1 {
