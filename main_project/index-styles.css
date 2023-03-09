@@ -90,7 +90,10 @@ header>h1 {
 
 
 
+.how-q {
+  font-family: 'Permanent Marker', cursive;
 
+}
 
 .how-1 {
   display: flex;
@@ -129,20 +132,34 @@ svg {
 display: flex;
 flex-direction: row;
 width: auto;
-max-height: 600px;
-margin-left: 5vw;
+max-height: 900px;
 flex-wrap: wrap;  
 gap: 20px;
-margin-top: 80px;
-margin-bottom: 80px;
+padding: 80px 30px;
 overflow: hidden;
+background-color: #452797;
+border-radius: 20px;
+margin: 50px
+}
+
+.core-values>.couplet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
 }
 
 
-.core-values>article{
-min-width:  300px;
-max-height: auto;
-min-height: 100px;
+
+
+.core-values>.couplet>article, .core-values>article {
+  border-radius: 20px;
+  border: solid;
+  text-align: center;
+  min-width:  300px;
+  min-height: 150px;
+  padding: 20px;
+  margin: 0 2px;
 }
 
 .topnav {
@@ -152,14 +169,21 @@ min-height: 100px;
 @media (max-width: 800px) {
 .core-values {
   display: block;
-  width: 98vw;
-  height: 100vh;
-  margin-left: 1vw;
+  margin: 0 4%;
+  width: 92%;
+  min-height: 100vh;
+  max-height: auto;
 }
 
-.core-values article  {
+.core-values>article, .core-values>.couplet>article  {
   width: 100%;
+  margin-bottom: 15px
 }
+
+.core-values>.couplet {
+  display: block;
+}
+
 
 .how-1 {
   display: block;
@@ -236,16 +260,20 @@ svg {
 
 
 main {
-  background-color: #3c4053;
+  background-color: #533c4a;
   color: white
 }
 
+.core-values>article>h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 /* Section used for centering process */
 #accordion-container {
   width: 100vw;
   height: 100vh;
-  background-color: #3c4053;
+  background-color:wheat;
   display: flex;
   align-items: center;
   justify-content: center;
