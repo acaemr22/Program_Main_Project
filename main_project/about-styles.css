@@ -24,8 +24,6 @@ header {
 
 #logo {
     width: max(100px, 18vw);
-    background-color: #0a0a23;
-    aspect-ratio: 35 / 4;
     padding: 0.4rem;
   }
 
@@ -82,6 +80,7 @@ body {
   padding-top: 70px;
   text-align: center;
   vertical-align:middle;
+  font-size: 1.8rem;
 }
 
 .start-p {
@@ -96,3 +95,32 @@ body {
   height: 30vh
 }
 
+iframe {
+  margin: 5px 25vw;
+  width: 50vw
+}
+
+
+
+#contact {
+  text-align: center;
+  border: solid;
+  width: 55vw;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #f1be32;
+  padding: 20px
+}
+
+#founder>h2 {
+  text-align: center;
+  margin-top: 40px
+}
+
+
+#founder>p {
+  margin: 20px 30px;
+  text-align: justify;
+  line-height: 1.5;
+}
