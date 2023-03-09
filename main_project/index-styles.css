@@ -232,11 +232,13 @@ svg {
 }
 
 
-
 }
 
 
-
+main {
+  background-color: #3c4053;
+  color: white
+}
 
 
 /* Section used for centering process */
@@ -267,7 +269,7 @@ svg {
 }
 
 
-.accordion-item-header {
+.accordion-item-header {  
   font-size: 1.6rem;
   color: rgba(255, 255, 255, .8);
   text-decoration: none;
