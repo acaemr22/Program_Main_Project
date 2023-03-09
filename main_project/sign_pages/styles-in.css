@@ -25,7 +25,6 @@ header {
 #logo {
     width: max(100px, 18vw);
     background-color: #0a0a23;
-    aspect-ratio: 35 / 4;
     padding: 0.4rem;
   }
 
@@ -204,7 +203,8 @@ div>h1, div>p {
       
       .topnav {
         display: block;
-        height: 50px
+        height: 50px;
+
       }
       
       /* Style the navigation menu */
@@ -254,4 +254,12 @@ div>h1, div>p {
         color: black;
       }
     
+}
+
+
+@media (max-width: 440px){
+    input[class="large"] {
+        width: 240px;
+        min-width: 200px;
+    }
 }
