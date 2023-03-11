@@ -1,154 +1,226 @@
-    <!-- Commondict Project -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free Knowledge Base Dictionary: Commondict">
-    <title>GoodWork | Most powerful searching system for finding the person you need</title>
-    <link rel="shortcut icon" href="Downloads\JobzPool (1).png"/>
-    <link rel="stylesheet" href="index-styles.css">
-    <script src="main.js"></script>
-    </head>
-    <body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
     <header>
-        <img id="logo" src="https://mma.prnewswire.com/media/1990405/jobzmalllogoo_Logo.jpg?w=200">
-        <h1>GoodWork</h1>
-        <nav>
-        <ul  class="large-nav">
-            <li><a href="about-us.html">Hakkımızda</a></li>
-            <li><a href="sign_pages/sign-up.html">Kayıt Ol</a></li>
-            <li><a href="sign_pages/sign-in.html">Oturum Aç</a></li>
-        </ul>
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Top Navigation Menu -->
-            <div class="topnav">
-                <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
-                    <a href="about-us.html" class="first">Hakkımızda</a>
-                    <a href="sign_pages/sign-up.html">Kayıt Ol</a>
-                    <a href="sign_pages/sign-in.html">Oturum Aç</a>
-                </div>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+      <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-weight:700;">GoodWork</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkımızda</a>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kayıt/Oturum
                 </a>
-            </div>
-        </nav>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Oturum Aç</a></li>
+                  <li><a class="dropdown-item" href="#">Kayıt Ol</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
     <main>
-        <section id="cafe-img">
-            <h1>GoodWork'e Hoş Geldiniz</h1>
-            <p>Sizi Önemseyerek Geliştirdiğimiz sistemimiz sayesinde <span>hayatınızı kolaylaştırır.</span></p>
-        </section>
-        <section class="how-1-section">
-            <h2 class="how-q">Nasıl Çalışır?</h2>
-            <div class="how-1">
-            <article>
-                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><rect x="32" y="48" width="192" height="160" rx="8" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><line x1="76" y1="96" x2="180" y2="96" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="76" y1="128" x2="180" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="76" y1="160" x2="180" y2="160" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-                <p>Yeni bir ilan açıp videoda istediğiniz soruları yazın, video süresine limit kurun.</p>
-            </article>
-            <article>
-                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="16"></circle><polyline points="128 72 128 128 184 128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
-                <p>Videolar satesinde aradığınızı kısa zamanda bulun.</p>
-            </article>
-            <article>
-                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M132.4,190.7l50.4,32c6.5,4.1,14.5-2,12.6-9.5l-14.6-57.4a8.7,8.7,0,0,1,2.9-8.8l45.2-37.7c5.9-4.9,2.9-14.8-4.8-15.3l-59-3.8a8.3,8.3,0,0,1-7.3-5.4l-22-55.4a8.3,8.3,0,0,0-15.6,0l-22,55.4a8.3,8.3,0,0,1-7.3,5.4L31.9,94c-7.7.5-10.7,10.4-4.8,15.3L72.3,147a8.7,8.7,0,0,1,2.9,8.8L61.7,209c-2.3,9,7.3,16.3,15,11.4l46.9-29.7A8.2,8.2,0,0,1,132.4,190.7Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                <p>Kişi işini bitirdikten sonra puanlayın.</p>
-            </article>
-            <article>
-                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><rect x="32" y="56" width="192" height="160" rx="24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><rect x="72" y="144" width="112" height="40" rx="20" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><line x1="148" y1="144" x2="148" y2="184" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="108" y1="144" x2="108" y2="184" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="56" x2="128" y2="16" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><circle cx="84" cy="108" r="12"></circle><circle cx="172" cy="108" r="12"></circle></svg>
-                <p>Zamanla yapay zeka neural network aracılığıyla sizinle aynı fikirde özellikler arayan insanların seçtiklerini size göstermeye başlayacak. Neural network hakkında daha fazla bilgi için <a href="https://www.youtube.com/watch?v=JrXazCEACVo&t=2s" target="_blank"  style="text-decoration: none; color:aqua">tıklayınız</a>. </p>
-            </article>
+<!-- Showcase -->
+      <section class="text-light bg-dark text-center text-sm-start">
+        <div class="container">
+          <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+              <h1 class=" py-4 py-sm-0">GoodWork'e Hoş Geldiniz</h1>
+              <p class="lead pb-5 py-sm-0 my-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint doloribus iste unde? Itaque, harum est eaque aspernatur aperiam tempore error eum quod eligendi hic expedita asperiores voluptatibus fugiat facilis corrupti.
+              </p>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="images/undraw_team_page_re_cffb.svg" alt="">
+          </div>
         </div>
-        </section>
-        <section>
-            <h2 class="how-q">Nasıl Çalışır? İş arayanlar için</h2>
-            <div class="how-2">
-            <article class="last">
-                <svg  xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M24,60H152a32,32,0,0,1,32,32v96a8,8,0,0,1-8,8H48a32,32,0,0,1-32-32V68A8,8,0,0,1,24,60Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><polyline points="184 112 240 80 240 176 184 144" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
-                <p>İlan şartlarına uyacak şekilde videonuzu kaydedin ve ilana yükleyin.</p>
-            </div>
-            </article>
-        </section>
+      </section>
 
-        <section class="core-values-section">
-            <h1 style="text-align: center;">Ana Değerlerimiz</h1>
-            <div class="core-values">
-            <article>
-                <h3>Zaman</h3>
-                <p>Diğer sitelerden farklı olarak sahip olduğumuz videoyla seçme sistemimiz size zaman kazandırmakta ve istediğiniz şeylere daha fazla zaman ayırmanızı sağlamaktadır.</p>
-            </article>
-            <article>
-                <h3>Potansiyel</h3>
-                <p>Herkesin birbiri için, topluluklar için, toplum için ve daha iyi bir yaşam için potansiyeli vardır. Herkes başkaları için  Hepimiz kullanmak için bir şansı hak ederiz.  </p>
-            </article>
-            <article>
-                <h3>Eşsizlik</h3>
-                <p>Herkesin insanlığa katkıda bulunacak eşsiz yetenekleri vardır ve hayatımızı daha iyi hale getirmek için bu hediyeleri beslemeliyiz.</p>
-            </article>
-            <article>
-                <h3>Denge</h3>
-                <p>Zayıf bir temel üzerine inşa edilmişse hiçbir sonuç anlamlı değildir. Sürdürülebilirlik, verdiğimiz her kararda anahtardır.</p>
-            </article>
-            <article>
-                <h3>Şeffaflık</h3>
-                <p>Bugünün dünyasınon en çok şeffaflığa ihtiyacı var. Dürüstlük ve şeffaflık bütün eylemlerimizin temelleridir.</p>
-            </article>
+      <section class="mx-sm-4">
+        <h1 class="mt-5">Nasıl Yapılır?</h1>
+        <div class="container">
+          <div class="row gx-md-5">
+            <div class="col-md text-center w-md-75 mt-auto">
+              <img src="images/undraw_content_creator_re_pt5b.svg"  class="w-50 mt-5" alt="">
+              <p class="lead my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita eum nisi error nesciunt reiciendis libero, vero autem est ipsum, distinctio necessitatibus, in eos ut deserunt exercitationem ea architecto. Necessitatibus!
+              </p>
+            </div>
+
+            <div class="col-md text-center w-md-75 mt-auto">
+              <img src="images/undraw_time_management_re_tk5w.svg"  class="w-50 mt-5" alt="">
+              <p class="lead my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita eum nisi error nesciunt reiciendis libero, vero autem est ipsum, distinctio necessitatibus, in eos ut deserunt exercitationem ea architecto. Necessitatibus!
+              </p>
+            </div>
+          </div>
+          
+          <div class="row gx-md-5">
+            <div class="col-md text-center w-md-75 mt-auto">
+              <img src="images/undraw_reviews_lp8w.svg"  class="w-50 mt-5" alt="">
+              <p class="lead my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita eum nisi error nesciunt reiciendis libero, vero autem est ipsum, distinctio necessitatibus, in eos ut deserunt exercitationem ea architecto. Necessitatibus!
+              </p>
+            </div>
+            
+            <div class="col-md text-center w-md-75 align-middle mt-auto">
+              <img src="images/undraw_online_transactions_-02-ka (1).svg"  class="w-50 mt-5" alt="">
+              <p class="lead my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita eum nisi error nesciunt reiciendis libero, vero autem est ipsum, distinctio necessitatibus, in eos ut deserunt exercitationem ea architecto. Necessitatibus!
+              </p>
+            </div>
+          </div>
         </div>
-        </section>
-
-        <section id="accordion-container">
-            <div class="container">
-                <div class="accordion">
-                    <div class="accordion-item"  id="question1">
-                        <a href="#question1" class="accordion-item-header">GoodWork nedir?
-                        <ion-icon name="add-outline"></ion-icon>
-                        <ion-icon name="remove-outline"></ion-icon>
-                    </a>
-                    <div class="accordion-item-body"><p class="accordion-item-body-content"> GoodWork başka kişileri devredebileceğiniz işler için gerekli insanları bulmanızı sağlar. Videolu başvuru ve değerlendirme sistemiyle aradığınız kişiyi diğer sitelere göre daha hızlı bulmanızı sağlar. Toplumuza kullanılan "vakit nakittir" sözünde anlatışdığı gibi vaktinizin size kalmasını sağlar.</p></div>
-                </div>
-                </div>
-
-
-                <div class="accordion">
-                    <div class="accordion-item"  id="question2">
-                        <a href="#question2" class="accordion-item-header">GoodWork'e nasıl ulaşabilirim?
-                        <ion-icon name="add-outline"></ion-icon>
-                        <ion-icon name="remove-outline"></ion-icon>
-                        </a>
-                    
-                    <div class="accordion-item-body"><p class="accordion-item-body-content"> <a id="mail"  href="mailto:info@goodwork.com.tr ">info@goodwork.com</a> üzerinden bizimle iletişim kurabilirsiniz. </p></div>
-                </div>
-                </div>
-
-
-                <div class="accordion">
-                    <div class="accordion-item"  id="question3">
-                        <a href="#question3" class="accordion-item-header">GoodWork'ün ücreti nedir?
-                        <ion-icon name="add-outline"></ion-icon>
-                        <ion-icon name="remove-outline"></ion-icon>
-                    </a>
-                
-                <div class="accordion-item-body"><p class="accordion-item-body-content"> İlan başına 35 tl ücret ödemeniz gerekmektedir.</p></div>
+      </section>
+      
+      <section class="mx-sm-4">
+        <h1 class="mt-5">Nasıl Yapılır?</h1>
+        <div class="container">
+          <div class="row gx-md-5">
+            <div class="col-md text-center mt-auto">
+              <img src="images/undraw_video_upload_3d4u.svg"  class="w-50 mt-5" alt="">
+              <p class="lead my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita eum nisi error nesciunt reiciendis libero, vero autem est ipsum, distinctio necessitatibus, in eos ut deserunt exercitationem ea architecto. Necessitatibus!
+              </p>
             </div>
-            </div>  
+          </div>
+        </div>
+      </section>
 
-                <div class="accordion">
-                    <div class="accordion-item"  id="question4">
-                        <a href="#question4" class="accordion-item-header">GoodWork'ün diğer sitelerden farkı nedir?
-                        <ion-icon name="add-outline"></ion-icon>
-                        <ion-icon name="remove-outline"></ion-icon>
-                    </a>
-                
-                <div class="accordion-item-body"><p class="accordion-item-body-content"> Bizim diğer sitelere göre farkımız videolu sistemimiz ve yapay zeka sistemimiz sayesinde sizin isteyebileceğinizi düşündüğümüz insanların videolarını öne getirmemiz size diğer sitelere göre daha fazla zaman kazandıracaktır.</p></div>
+      <!-- Core Values -->
+
+      <style>
+        .core-values-section {
+          background-color: #452797;
+        }
+
+        .core-values-section>.container>.row>.col-md {
+          border-radius: 20px;
+          border: solid white;
+          text-align: center;
+          
+        }
+      </style>
+      <section class="core-values-section text-light py-5" >
+        <div class="container">
+          <h1 class="text-center">Ana Değerlerimiz</h1>
+
+
+          <div class="row text-center g-md-4 gy-3 my-3">
+            <div class="col-md mx-md-3 py-3">
+              <h3>Zaman</h3>
+              <p class="lead">Diğer sitelerden farklı olarak sahip olduğumuz videoyla seçme sistemimiz size zaman kazandırmakta ve istediğiniz şeylere daha fazla zaman ayırmanızı sağlamaktadır.</p>
+            </div>
+            <div class="col-md mx-md-3 py-3">
+              <h3>Potansiyel</h3>
+              <p class="lead">Herkesin birbiri için, topluluklar için, toplum için ve daha iyi bir yaşam için potansiyeli vardır. Herkes başkaları için Hepimiz kullanmak için bir şansı hak ederiz.</p>
+            </div>
+          </div>
+
+          <div class="row text-center g-md-4 gy-3 mb-3">
+            <div class="col-md mx-auto mx-md-3 py-3">
+              <h3>Eşsizlik</h3>
+              <p class="lead">Herkesin insanlığa katkıda bulunacak eşsiz yetenekleri vardır ve hayatımızı daha iyi hale getirmek için bu hediyeleri beslemeliyiz.</p>
+            </div>
+            <div class="col-md mx-md-3 py-3">
+              <h3>Sürdürülebilirlik</h3>
+              <p class="lead">Zayıf bir temel üzerine inşa edilmişse hiçbir sonuç anlamlı değildir. Sürdürülebilirlik, verdiğimiz her kararda anahtardır.</p>
+            </div>
+          </div>
+
+          <div class="row text-center g-md-4 my-3 mx-md-auto">
+            <div class="col-md py-3">
+              <h3>Şeffaflık</h3>
+              <p class="text-center lead m-auto">Bugünün dünyasınon en çok şeffaflığa ihtiyacı var. Dürüstlük ve şeffaflık bütün eylemlerimizin temelleridir.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordion -->
+      <section>
+        <div class="container py-5">
+          <h1 class="text-center">Sık Sorulan Sorular</h1>
+          <div class="accordion" id="accordion">
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  GoodWork nedir?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  GoodWork'e Nasıl ulaşabilirim?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  GoodWork'ün ücret nedir?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  GoodWork'ün ücret nedir?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
             </div>
 
-        </section>
+          </div>
+        </div>
+      </section>
+      
     </main>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
-    </html>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+  </html>
