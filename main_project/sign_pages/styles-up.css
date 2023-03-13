@@ -342,9 +342,11 @@ div>h1, div>p {
     }
 
     div[class="inline-part"] {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 0;
-        margin: 0
+        margin: 0;
+        justify-content: center;
     }
 
     #soyad-fieldset, #ad-fieldset {
@@ -369,7 +371,7 @@ div>h1, div>p {
         width: 180px ;
         height: 35px;
         font-size: 16px;
-        margin-left: 0;
+        margin-left: 0; 
     }
 
     #ad-label, #soyad-label {
